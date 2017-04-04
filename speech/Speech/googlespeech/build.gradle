@@ -22,7 +22,6 @@ android {
     buildToolsVersion '24.0.2'
 
     defaultConfig {
-        applicationId "com.google.cloud.android.speech"
         targetSdkVersion 24
         versionCode 1
         versionName '1.0'

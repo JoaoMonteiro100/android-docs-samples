@@ -90,6 +90,8 @@ public class ApiFragment extends Fragment {
 
     private static final String TAG = "ApiFragment";
 
+    private static final String LANG = "pt-PT";
+
     private SpeechGrpc.SpeechStub mApi;
 
     private final StreamObserver<StreamingRecognizeResponse> mResponseObserver
@@ -189,7 +191,7 @@ public class ApiFragment extends Fragment {
         mRequestObserver.onNext(StreamingRecognizeRequest.newBuilder()
                 .setStreamingConfig(StreamingRecognitionConfig.newBuilder()
                         .setConfig(RecognitionConfig.newBuilder()
-                                .setLanguageCode(getDefaultLanguageCode())
+                                .setLanguageCode(LANG)
                                 .setEncoding(RecognitionConfig.AudioEncoding.LINEAR16)
                                 .setSampleRate(sampleRate)
                                 .build())
