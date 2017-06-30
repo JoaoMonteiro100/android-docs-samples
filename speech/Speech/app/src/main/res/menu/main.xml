@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright 2016 Google Inc. All Rights Reserved.
+  Copyright 2017 Google Inc. All Rights Reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -14,18 +14,13 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<resources>
-    <color name="primary">#3F51B5</color>
-    <color name="primaryDark">#303F9F</color>
-    <color name="primaryLight">#C5CAE9</color>
-    <color name="accent">#FFC107</color>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <color name="score_positive">#43A047</color>
-    <color name="score_neutral">#757575</color>
-    <color name="score_negative">#E53935</color>
-    <color name="magnitude">#0288D1</color>
+    <item
+        android:id="@+id/action_file"
+        android:title="@string/load_file"
+        app:showAsAction="ifRoom"/>
 
-    <color name="label">#558B2F</color>
-    <color name="part_of_speech">#757575</color>
-
-</resources>
+</menu>
